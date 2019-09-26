@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="en" class="yui3-js-enabled js sb-init" lang="en"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Programming Assign. Unit 3 (Submission phase)</title>
+    <link rel="shortcut icon" href="https://my.uopeople.edu/pluginfile.php/1/theme_altitude/favicon/0//favicon.ico">    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/nr-1130.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="keywords" content="moodle, Programming Assign. Unit 3 (Submission phase)">
+<link rel="stylesheet" type="text/css" href="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo_002.css"><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1569423092853_8" href="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo.css"><script charset="utf-8" id="yui_3_17_2_1_1569423092853_9" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo_004.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1569423092853_25" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo_006.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1569423092853_27" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo_005.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1569423092853_51" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo_003.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1569423092853_76" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo_002.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1569423092853_78" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1569423092853_98" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/MathJax.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/all.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/my.uopeople.edu","sesskey":"6mgAZ3o1tG","themerev":"1569413208","slasharguments":1,"theme":"altitude","iconsystemmodule":"core\/icon_system_standard","jsrev":"1569413208","admin":"admin","svgicons":true,"usertimezone":"America\/New_York","contextid":547668};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/my.uopeople.edu\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/my.uopeople.edu\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?m\/1569413208\/","combine":true,"comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","ext":false,"root":"m\/1569413208\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_oublog-savecheck":{"requires":["base","node","io","panel","moodle-core-notification-alert"]},"moodle-mod_oublog-tagselector":{"requires":["base","node","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_kalturamedia-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_styles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_templates-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-local_kaltura-lticontainer":{"requires":["base","node"]},"moodle-local_kaltura-ltipanel":{"requires":["base","node","panel","node-event-simulate"]},"moodle-local_kaltura-ltiservice":{"requires":["base","node","node-event-simulate"]},"moodle-local_kaltura-ltitinymcepanel":{"requires":["base","node","panel","node-event-simulate"]},"moodle-local_rltoolkit-archive":{"requires":["base","node","panel","plugin","transition","event","event-delegate"]},"moodle-local_rltoolkit-archive_v3":{"requires":["moodle-local_rltoolkit-archive"]}}},"gallery":{"name":"gallery","base":"https:\/\/my.uopeople.edu\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/my.uopeople.edu\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1569413208\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/my.uopeople.edu\/lib\/javascript.php\/1569413208\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/my.uopeople.edu\/lib\/javascript.php\/1569413208\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <link href="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/css.css" rel="stylesheet" type="text/css">
+    <link href="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/css_002.css" rel="stylesheet" type="text/css">
+    <link href="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/font-awesome.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/first.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/jquery-3.js"></script><script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body id="page-mod-workshop-view" class="format-weeks  path-mod path-mod-workshop gecko dir-ltr lang-en yui-skin-sam yui3-skin-sam my-uopeople-edu pagelayout-incourse course-3156 context-547668 cmid-183249 category-83 two-column custom-theme purplewhite-theme altitude-settings-coursecatajax altitude-settings-onetopicvertical altitude-settings-gridenhanced has-region-side-pre empty-region-side-pre has-region-sidebar-block used-region-sidebar-block has-region-footer-one empty-region-footer-one has-region-footer-two empty-region-footer-two has-region-footer-three empty-region-footer-three has-region-footer-four used-region-footer-four jsenabled"><div id="MathJax_Message" style="display: none;"></div>
+
+<div class="skiplinks">
+    <a href="#maincontent" class="skip">Skip to main content</a>
+<div id="extwaiimpotscp" style="display:none" v="{0aa5" f="ZXpCaFlUVTRNMlJoTFdVek1qTXROREptTWkxaU5HUXlMVEJpWXpZeFlqUTVNekUzTVgwPQ==" q="a4bc625a" c="136.6" i="194.5" u="13.55" s="19090508" w="false" m="BMe=" vn="0oxf1"></div></div><script type="text/javascript" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/yui_combo_007.php"></script><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><script type="text/javascript" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/jquery-3_002.js"></script>
+<script type="text/javascript" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<header role="banner" class="navbar navbar-fixed-top moodle-has-zindex sb-slide">
+
+    <nav role="navigation" class="navbar-inner">
+        <div class="container-fluid">
+            <div id="logo">
+                <a href="https://my.uopeople.edu/">
+                    <img alt="Logo" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/logo_uopeople.png">                </a>
+            </div>
+            <div class="menus">
+                <ul class="nav altitude-custom-menu" style=""><li><a title="Home" href="https://my.uopeople.edu/">Home</a></li><li><a title="Contact us" href="https://my.uopeople.edu/mod/book/view.php?id=144740">Contact us</a></li><li class="dropdown"><a href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152713" class="dropdown-toggle" data-toggle="dropdown" title="Resources">Resources<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="UoPeople Library" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152716">UoPeople Library</a></li><li><a title="Orientation Videos" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152717">Orientation Videos</a></li><li><a title="OSWC" href="http://my.uopeople.edu/course/view.php?id=770">OSWC</a></li><li><a title="Peer Assessment Office" href="https://my.uopeople.edu/course/view.php?id=343">Peer Assessment Office</a></li><li><a title="Syllabus Repository" href="https://my.uopeople.edu/mod/book/view.php?id=45606">Syllabus Repository</a></li><li><a title="Honor's Lists" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=153967">Honor's Lists</a></li></ul></li><li class="dropdown"><a href="#cm_submenu_2" class="dropdown-toggle" data-toggle="dropdown" title="Links">Links<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="About Us" href="http://www.uopeople.edu/about">About Us</a></li><li><a title="Policies" href="http://www.uopeople.edu/tuition-free/uopeople-policies">Policies</a></li><li><a title="University Catalog" href="http://www.uopeople.edu/about/uopeople/essential-uopeople-documents/university-catalog">University Catalog</a></li><li><a title="Support" href="http://www.uopeople.edu/student-experience/support">Support</a></li><li><a title="Student Portal" href="https://your.uopeople.edu/">Student Portal</a></li></ul></li><li class="dropdown"><a href="https://my.uopeople.edu/my" class="dropdown-toggle" data-toggle="dropdown" title="Faculty">Faculty<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="Faculty Portal" href="https://your.uopeople.edu/">Faculty Portal</a></li><li><a title="New Faculty Resource Center" href="https://my.uopeople.edu/course/view.php?id=1979">New Faculty Resource Center</a></li><li><a title="Office 365" href="https://www.office.com/">Office 365</a></li><li><a title="Tipalti" href="https://www.tipalti.com/">Tipalti</a></li></ul></li><li class="dropdown"><a href="#cm_submenu_4" class="dropdown-toggle" data-toggle="dropdown">My courses<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="CS 2205 - AY2020-T1" href="https://my.uopeople.edu/course/view.php?id=3156">CS 2205 Web Programming 1 - Term 1, 2019-2020</a></li><li><a title="OSWC" href="https://my.uopeople.edu/course/view.php?id=770">Online Student Writing Center (Optional Resource)</a></li><li><a title="PAO" href="https://my.uopeople.edu/course/view.php?id=343">Peer Assessment Office (Optional Resource)</a></li></ul></li></ul>            </div>
+        </div>
+    </nav>
+    <div id="top-header-wrap">
+        <div id="top-header" class="container-fluid">
+            <a id="side-panel-button" name="side-panel-button" tabindex="0" class="sb-toggle-left" href="#">
+                <div id="hamburger">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="screen-reader-text">Access hidden sidebar block region.</span>
+                </div>
+                <div href="#" class="optional-display-text">
+                    <span>Menu</span>
+                </div></a>                        <div id="top-header-info">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/UoPeople" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/UoPeople" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/school/university-of-the-people/" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a><a href="https://www.youtube.com/user/UoPeople" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a>                </div>
+            </div>
+            <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="30973" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-5d8b7ef354ba95d8b7ef34cba625" aria-haspopup="true" aria-label="Show message window with no new messages" tabindex="0">
+                <img class="icon " alt="Toggle messages menu" title="Toggle messages menu" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/message.svg">
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5d8b7ef354ba95d8b7ef34cba625" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Messages</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="https://my.uopeople.edu/message/index.php?contactsfirst=1">New message
+            </a>
+        </div>
+        <a class="mark-all-read-button" href="#" role="button" title="Mark all as read" data-action="mark-all-read">
+            <span class="normal-icon"><img class="icon " alt="Mark all as read" title="Mark all as read" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/markasread.svg"></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/loading.gif"></span>
+        </a>
+        <a href="https://my.uopeople.edu/message/edit.php?id=30973" title="Message preferences">
+            <img class="icon " alt="Message preferences" title="Message preferences" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/settings.svg">
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">No messages</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://my.uopeople.edu/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="30973" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-5d8b7ef3564ff5d8b7ef34cba626" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <img class="icon " alt="Toggle notifications menu" title="Toggle notifications menu" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/notifications.svg">
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5d8b7ef3564ff5d8b7ef34cba626" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="#" title="Mark all as read" data-action="mark-all-read" role="button">
+            <span class="normal-icon"><img class="icon " alt="Mark all as read" title="Mark all as read" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/markasread.svg"></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/loading.gif"></span>
+        </a>
+        <a href="https://my.uopeople.edu/message/notificationpreferences.php?userid=30973" title="Notification preferences">
+            <img class="icon " alt="Notification preferences" title="Notification preferences" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/settings.svg">
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://my.uopeople.edu/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>            <div class="usermenu"><div class="moodle-actionmenu nowrap-items" id="action-menu-0" data-enhance="moodle-core-actionmenu" data-enhanced="1">
+
+        <ul class="menubar" id="action-menu-0-menubar" role="menubar">
+
+            <!--
+
+            --><!--
+
+            --><li role="presentation"><a href="#" class=" toggle-display textmenu" id="action-menu-toggle-0" title="User menu" role="menuitem" aria-haspopup="true"><span class="userbutton"><span class="usertext mr-1">Julien Laurent</span><span class="avatars"><span class="avatar current"><img src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/f2.jpg" class="userpicture" role="presentation" aria-hidden="true" width="35" height="35"></span></span></span><b class="caret"></b></a>
+</li>
+
+        </ul>
+
+
+        <ul class="menu  align-tr-br" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br" aria-hidden="true">
+            <li role="presentation">    <a href="https://my.uopeople.edu/my/" class="icon menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/dashboard.svg"><span class="menu-action-text" id="actionmenuaction-1">Dashboard</span></a>
+
+
+
+
+
+</li><li role="presentation">
+<span class="filler">&nbsp;</span>
+
+
+
+</li><li role="presentation">    <a href="https://my.uopeople.edu/user/profile.php?id=30973" class="icon menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/user.svg"><span class="menu-action-text" id="actionmenuaction-2">Profile</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="https://my.uopeople.edu/grade/report/overview/index.php" class="icon menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/grades_002.svg"><span class="menu-action-text" id="actionmenuaction-3">Grades</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="https://my.uopeople.edu/message/index.php" class="icon menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/message.svg"><span class="menu-action-text" id="actionmenuaction-4">Messages</span></a>
+
+
+
+
+
+</li><li role="presentation">    <a href="https://my.uopeople.edu/user/preferences.php" class="icon menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/preferences.svg"><span class="menu-action-text" id="actionmenuaction-5">Preferences</span></a>
+
+
+
+
+
+</li><li role="presentation">
+<span class="filler">&nbsp;</span>
+
+
+
+</li><li role="presentation">    <a href="https://my.uopeople.edu/login/logout.php?sesskey=6mgAZ3o1tG" class="icon menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/logout.svg"><span class="menu-action-text" id="actionmenuaction-6">Log out</span></a>
+
+
+
+
+
+</li>
+        </ul>
+</div></div>        </div>
+    </div>
+
+</header>
+
+<div class="sb-slide" id="yui_3_17_2_1_1569423092853_106">
+
+    <section id="page-header-wrap">
+        <div class="container-fluid">
+            <header id="page-header" class="clearfix"><div class="page-context-header"><div class="page-header-headings"><h1>CS 2205 Web Programming 1 - Term 1, 2019-2020</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><span class="accesshide" id="navbar-label">Page path</span><nav aria-labelledby="navbar-label"><ul class="breadcrumb"><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://my.uopeople.edu/"><span itemprop="title">Home</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">▶︎</span> </span></li><li><span tabindex="0">My courses</span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">▶︎</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="CS 2205 Web Programming 1 - Term 1, 2019-2020" href="https://my.uopeople.edu/course/view.php?id=3156"><span itemprop="title">CS 2205 - AY2020-T1</span></a></span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">▶︎</span> </span></li><li><span tabindex="0">19 September - 25 September</span> <span class="divider"> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">▶︎</span> </span></li><li><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Workshop" aria-current="page" href="https://my.uopeople.edu/mod/workshop/view.php?id=183249"><span itemprop="title">Programming Assign. Unit 3</span></a></span></li></ul></nav></div><div class="breadcrumb-button"></div></div><div id="course-header"></div></header>        </div>
+    </section>
+
+    <div id="page" class="container-fluid">
+
+        <div id="page-content" class="row-fluid">
+            <section id="region-main" class="span9 pull-right">
+                <span class="notifications" id="user-notifications"></span><div role="main" id="yui_3_17_2_1_1569423092853_105"><span id="maincontent"></span><h2>Programming Assign. Unit 3<span class="helptooltip">
+    <a href="https://my.uopeople.edu/help.php?component=workshop&amp;identifier=userplan&amp;lang=en" title="Help with Workshop planner" aria-haspopup="true" target="_blank"><img class="icon iconhelp" alt="Help with Workshop planner" title="Help with Workshop planner" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/help.svg"></a>
+</span></h2><h3 id="mod_workshop-userplanheading">Submission phase</h3><div class="userplan" aria-labelledby="mod_workshop-userplanheading" aria-describedby="mod_workshop-userplanaccessibilitytitle"><span class="accesshide" id="mod_workshop-userplanaccessibilitytitle">Workshop timeline with 5 phases</span><a class="accesshide" href="#mod_workshop-userplancurrenttasks">Skip to current tasks</a><dl class="phase"><dt class="phase10 nonactive" style="height: 42px;"><div><span class="phasetitle">Setup phase</span></div></dt><dd class="phase10 nonactive phasetasks" style="height: 180px;"></dd></dl><dl class="phase"><dt class="phase20 active" style="height: 42px;"><div><span class="phasetitle" id="mod_workshop-userplancurrenttasks">Submission phase</span><div class="actions">Current phase <img class="icon " role="presentation" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/marked.svg"></div></div></dt><dd class="phase20 active phasetasks" style="height: 180px;"><ul class="tasks"><li class=""><div class="title"><span class="accesshide">Task to do </span><a href="https://my.uopeople.edu/mod/workshop/submission.php?cmid=183249&amp;id">Submit your work</a></div><div class="details"></div></li><li class=" info"><div class="title"><span class="accesshide">Task info </span>Open for submissions from Thursday, 19 September 2019, 1:05 AM (6 days ago)</div><div class="details"></div></li><li class=" info"><div class="title"><span class="accesshide">Task info </span>Submissions deadline: Thursday, 26 September 2019, 12:55 AM (tomorrow)</div><div class="details"></div></li></ul></dd></dl><dl class="phase"><dt class="phase30 nonactive" style="height: 42px;"><div><span class="phasetitle">Assessment phase</span></div></dt><dd class="phase30 nonactive phasetasks" style="height: 180px;"><ul class="tasks"><li class=" info"><div class="title"><span class="accesshide">Task info </span>Open for assessment from Thursday, 26 September 2019, 1:05 AM (tomorrow)</div><div class="details"></div></li><li class=" info"><div class="title"><span class="accesshide">Task info </span>Assessment deadline: Thursday, 3 October 2019, 12:55 AM (8 days left)</div><div class="details"></div></li></ul></dd></dl><dl class="phase"><dt class="phase40 nonactive" style="height: 42px;"><div><span class="phasetitle">Grading evaluation phase</span></div></dt><dd class="phase40 nonactive phasetasks" style="height: 180px;"></dd></dl><dl class="phase"><dt class="phase50 nonactive" style="height: 42px;"><div><span class="phasetitle">Closed</span></div></dt><dd class="phase50 nonactive phasetasks" style="height: 180px;"></dd></dl></div><div id="workshop-viewlet-instructauthors" class="collapsibleregion "><div id="workshop-viewlet-instructauthors_sizer"><div id="workshop-viewlet-instructauthors_caption" class="collapsibleregioncaption"><a href="#" title="Click to expand or collapse">Instructions for submission <img src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/expanded.svg" alt=""></a></div><div id="workshop-viewlet-instructauthors_inner" class="collapsibleregioninner"><div class="box generalbox instructions" id="yui_3_17_2_1_1569423092853_104"><div class="no-overflow" id="yui_3_17_2_1_1569423092853_103"><ol start="1"><li>Create an HTML document that displays the numbers 1 - 10, each number being a different color.</li>
+<li>Create an HTML document that displays the squares of the numbers 1 -
+ 10. Each number should be on a separate line, next to it the number 2 
+superscripted, an equal sign and the result. (Example: 102 = 100)</li>
+<li>Create an HTML document that displays two lists with any information
+ you want. One list should be an ordered list, the other list should be 
+an unordered list</li>
+<li>Create an HTML document that displays two addresses in the same 
+format used on the front of envelopes (senders address in top left 
+corner, receivers address in the center). Like the following</li>
+</ol><p><i>Dilbert H.<br> 1234 Anim Street<br> P.O. Box 22222</i></p>
+<p align="center"><i>Someone A. Person<br> 5555 Street Avenue<br> Metrpolitan, Metropolis 11111 </i></p>
+<ol id="yui_3_17_2_1_1569423092853_102" start="5"><li>Create a page with
+ a link at the top of it that when clicked will jump all the way to the 
+bottom of the page. At the bottom of the page there should be a link to 
+jump back to the top of the page.</li>
+<li>Create links to four different pages on four different websites that should all open in a new window</li>
+<li>Display five different images. Skip two lines between each image. Each image should have a title</li>
+<li>Display an image that has a border of size 2, a width of 200, and a height of 200.</li>
+<li>Display an image that when clicked will link to itself and will display the image in the browser by itself</li>
+<li id="yui_3_17_2_1_1569423092853_101">Display an image that when clicked will link to a search engine of your choice (should be opened in a new window)</li>
+</ol><p id="yui_3_17_2_1_1569423092853_107">Pick 5 corporations and hunt
+ down their current stock prices. Place them in a neatly arranged table 
+with their name, symbol, last price, 52wk high, 52wk low and PE ratio. 
+The end result should look like the following. Notice that he first 
+column is aligned left and the rest are centered.</p>
+<p style="text-align:center;" id="yui_3_17_2_1_1569423092853_109"><img src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/CS2205Unit03WAImg01.jpg" alt="CS2205Unit03WAImg01.jpg" id="yui_3_17_2_1_1569423092853_108" width="621" height="385"></p></div></div></div></div></div><div id="workshop-viewlet-ownsubmission" class="collapsibleregion "><div id="workshop-viewlet-ownsubmission_sizer"><div id="workshop-viewlet-ownsubmission_caption" class="collapsibleregioncaption"><a href="#" title="Click to expand or collapse">Your submission <img src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/expanded.svg" alt=""></a></div><div id="workshop-viewlet-ownsubmission_inner" class="collapsibleregioninner"><div class="box generalbox ownsubmission"><div>You have not submitted your work yet</div><div class="singlebutton"><form method="get" action="https://my.uopeople.edu/mod/workshop/submission.php"><div><input type="submit" value="Start preparing your submission"><input type="hidden" name="cmid" value="183249"><input type="hidden" name="id" value=""><input type="hidden" name="edit" value="on"></div></form></div></div></div></div></div></div><div class="m-t-2 m-b-1">
+<div class="row-fluid rtl-compatible">
+    <div class="span4">        <div class="pull-left">
+                <a href="https://my.uopeople.edu/mod/forum/view.php?id=183248&amp;forceview=1" id="prev-activity-link" class="btn btn-link" title="Discussion Forum Unit 3">◀︎ Discussion Forum Unit 3</a>
+
+        </div>
+</div>
+    <div class="span4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://my.uopeople.edu/course/jumpto.php" class="form-inline" id="url_select_f5d8b7ef34cba635">
+        <input type="hidden" name="sesskey" value="6mgAZ3o1tG">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="selected">Jump to...</option>
+                    <option value="/mod/page/view.php?id=183235&amp;forceview=1">Syllabus</option>
+                    <option value="/mod/forum/view.php?id=183236&amp;forceview=1">Course Forum</option>
+                    <option value="/mod/forum/view.php?id=183237&amp;forceview=1">Announcements</option>
+                    <option value="/mod/book/view.php?id=183238&amp;forceview=1">Learning Guide Unit 1</option>
+                    <option value="/mod/forum/view.php?id=183239&amp;forceview=1">Discussion Forum Unit 1</option>
+                    <option value="/mod/workshop/view.php?id=183240&amp;forceview=1">Programming Assign. Unit 1</option>
+                    <option value="/mod/assign/view.php?id=183241&amp;forceview=1">Learning Journal Unit 1</option>
+                    <option value="/mod/quiz/view.php?id=183242&amp;forceview=1">Self-Quiz Unit 1</option>
+                    <option value="/mod/book/view.php?id=183243&amp;forceview=1">Learning Guide Unit 2</option>
+                    <option value="/mod/forum/view.php?id=183244&amp;forceview=1">Discussion Forum Unit 2</option>
+                    <option value="/mod/workshop/view.php?id=183245&amp;forceview=1">Programming Assign. Unit 2</option>
+                    <option value="/mod/quiz/view.php?id=183246&amp;forceview=1">Self-Quiz Unit 2</option>
+                    <option value="/mod/book/view.php?id=183247&amp;forceview=1">Learning Guide Unit 3</option>
+                    <option value="/mod/forum/view.php?id=183248&amp;forceview=1">Discussion Forum Unit 3</option>
+                    <option value="/mod/assign/view.php?id=183250&amp;forceview=1">Learning Journal Unit 3</option>
+                    <option value="/mod/quiz/view.php?id=183251&amp;forceview=1">Self-Quiz Unit 3</option>
+                    <option value="/mod/quiz/view.php?id=183252&amp;forceview=1">Graded Quiz Unit 3</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="span4">        <div class="pull-right">
+                <a href="https://my.uopeople.edu/mod/assign/view.php?id=183250&amp;forceview=1" id="next-activity-link" class="btn btn-link" title="Learning Journal Unit 3">Learning Journal Unit 3 ▶︎</a>
+
+        </div>
+</div>
+</div>
+</div>            </section>
+            <aside id="block-region-side-pre" class="span3 desktop-first-column block-region" data-blockregion="side-pre" data-droptarget="1"></aside>        </div>
+
+    </div>
+
+    <footer id="page-footer">
+        <div class="footer-content container-fluid">
+            <div class="row-fluid">
+                <aside id="block-region-footer-one" class="span4 block-region" data-blockregion="footer-one" data-droptarget="1"></aside>                <aside id="block-region-footer-two" class="span4 block-region" data-blockregion="footer-two" data-droptarget="1"></aside>                <aside id="block-region-footer-three" class="span4 block-region" data-blockregion="footer-three" data-droptarget="1"></aside>            </div>
+        </div>
+    <div class="usertour">
+    <a href="#" data-action="tool_usertours/resetpagetour">Reset user tour on this page</a>
+</div></footer>
+
+    <footer id="page-footer2">
+        <div class="footer-content container-fluid">
+            <div class="row-fluid">
+                <aside id="block-region-footer-four" class="span12 block-region" data-blockregion="footer-four" data-droptarget="1"><div id="inst1468" class="block_html block" role="complementary" data-block="html" data-instanceid="1468" aria-label="HTML"><div class="content"><div class="block_action notitle"></div><div class="no-overflow"><p><a href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152710">Disclaimer Regarding Use of Course Material</a></p><p><sub>University
+ of the People is a 501(c)(3) not for profit organization. Contributions
+ are tax deductible to the extent permitted by law.<br></sub><sub>Copyright © University of the People 2018. All rights reserved.</sub><br></p></div></div></div></aside>            </div>
+            <p class="helplink"></p>
+        </div>
+    <div class="usertour">
+    <a href="#" data-action="tool_usertours/resetpagetour">Reset user tour on this page</a>
+</div></footer>
+
+</div>
+
+<div id="sidebar-block" class="sb-slidebar sb-left sb-style-push" style="margin-left: -342.3px;">
+    
+        <a class="skip" id="access-slidebar-blocks" name="access-slidebar-blocks" tabindex="-1">
+            <span class="screen-reader-text">Hidden sidebar block region</span>
+        </a>    <!-- Social icons -->
+    <div class="social-icons-sidebar">
+        <a href="https://www.facebook.com/UoPeople" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/UoPeople" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/school/university-of-the-people/" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a><a href="https://www.youtube.com/user/UoPeople" target="_blank" title="youtube"><i class="fa fa-youtube"></i></a>    </div>
+    <!-- Nav menu -->
+    <div class="altitude-menu-sidebar">
+        <ul class="nav altitude-custom-menu" style="display: none;"><li><a title="Home" href="https://my.uopeople.edu/">Home</a></li><li><a title="Contact us" href="https://my.uopeople.edu/mod/book/view.php?id=144740">Contact us</a></li><li class="dropdown"><a href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152713" class="dropdown-toggle" data-toggle="dropdown" title="Resources">Resources<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="UoPeople Library" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152716">UoPeople Library</a></li><li><a title="Orientation Videos" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=152717">Orientation Videos</a></li><li><a title="OSWC" href="http://my.uopeople.edu/course/view.php?id=770">OSWC</a></li><li><a title="Peer Assessment Office" href="https://my.uopeople.edu/course/view.php?id=343">Peer Assessment Office</a></li><li><a title="Syllabus Repository" href="https://my.uopeople.edu/mod/book/view.php?id=45606">Syllabus Repository</a></li><li><a title="Honor's Lists" href="https://my.uopeople.edu/mod/book/view.php?id=144740&amp;chapterid=153967">Honor's Lists</a></li></ul></li><li class="dropdown"><a href="#cm_submenu_6" class="dropdown-toggle" data-toggle="dropdown" title="Links">Links<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="About Us" href="http://www.uopeople.edu/about">About Us</a></li><li><a title="Policies" href="http://www.uopeople.edu/tuition-free/uopeople-policies">Policies</a></li><li><a title="University Catalog" href="http://www.uopeople.edu/about/uopeople/essential-uopeople-documents/university-catalog">University Catalog</a></li><li><a title="Support" href="http://www.uopeople.edu/student-experience/support">Support</a></li><li><a title="Student Portal" href="https://your.uopeople.edu/">Student Portal</a></li></ul></li><li class="dropdown"><a href="https://my.uopeople.edu/my" class="dropdown-toggle" data-toggle="dropdown" title="Faculty">Faculty<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="Faculty Portal" href="https://your.uopeople.edu/">Faculty Portal</a></li><li><a title="New Faculty Resource Center" href="https://my.uopeople.edu/course/view.php?id=1979">New Faculty Resource Center</a></li><li><a title="Office 365" href="https://www.office.com/">Office 365</a></li><li><a title="Tipalti" href="https://www.tipalti.com/">Tipalti</a></li></ul></li><li class="dropdown"><a href="#cm_submenu_8" class="dropdown-toggle" data-toggle="dropdown">My courses<b class="caret"></b></a><ul class="dropdown-menu"><li><a title="CS 2205 - AY2020-T1" href="https://my.uopeople.edu/course/view.php?id=3156">CS 2205 Web Programming 1 - Term 1, 2019-2020</a></li><li><a title="OSWC" href="https://my.uopeople.edu/course/view.php?id=770">Online Student Writing Center (Optional Resource)</a></li><li><a title="PAO" href="https://my.uopeople.edu/course/view.php?id=343">Peer Assessment Office (Optional Resource)</a></li></ul></li></ul>    </div>
+    <aside id="block-region-sidebar-block" class="sidebar-block block-region" data-blockregion="sidebar-block" data-droptarget="1"><a class="skip skip-block" id="fsb-1" href="#sb-1">Skip Navigation</a><div id="inst7711" class="block_navigation block" role="navigation" data-block="navigation" data-instanceid="7711" aria-labelledby="instance-7711-header"><div class="header"><div class="title" id="yui_3_17_2_1_1569423092853_38"><div class="block_action"><img class="block-hider-hide" alt="Hide Navigation block" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/switch_minus.svg" tabindex="0" title="Hide Navigation block"><img class="block-hider-show" alt="Show Navigation block" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/switch_plus.svg" tabindex="0" title="Show Navigation block"></div><h2 id="instance-7711-header">Navigation</h2></div></div><div class="content"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" aria-labelledby="label_1_1" tabindex="-1"><p class="tree_item branch navigation_node" role="treeitem" aria-expanded="true" aria-owns="random5d8b7ef34cba61_group" data-collapsible="false" tabindex="0" aria-selected="true"><a tabindex="-1" id="label_1_1" href="https://my.uopeople.edu/">Home</a></p><ul id="random5d8b7ef34cba61_group" role="group" tabindex="-1"><li class="type_setting depth_2 item_with_icon" aria-labelledby="label_2_2" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_2_2" href="https://my.uopeople.edu/my/"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/dashboard.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Dashboard</span></a></p></li><li class="type_course depth_2 contains_branch" aria-labelledby="label_2_3" tabindex="-1"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random5d8b7ef34cba63_group" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_2_3" title="University of the People">Site pages</span></p><ul id="random5d8b7ef34cba63_group" role="group" aria-hidden="true" tabindex="-1"><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_5" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_5" href="https://my.uopeople.edu/badges/view.php?type=1"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Site badges</span></a></p></li><li class="type_setting depth_3 item_with_icon" aria-labelledby="label_3_6" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_6" href="https://my.uopeople.edu/tag/search.php"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Tags</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_7" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_7" href="https://my.uopeople.edu/calendar/view.php?view=month&amp;course=3156"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/calendar.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Calendar</span></a></p></li><li class="type_activity depth_3 item_with_icon" aria-labelledby="label_3_9" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_9" title="Forum" href="https://my.uopeople.edu/mod/forum/view.php?id=1"><img class="icon navicon" alt="Forum" title="Forum" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/icon.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Site news</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_10" tabindex="-1"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random5d8b7ef34cba68_group" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_2_10">My courses</span></p><ul id="random5d8b7ef34cba68_group" role="group" tabindex="-1"><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_11" tabindex="-1"><p class="tree_item branch canexpand" role="treeitem" aria-expanded="true" aria-owns="random5d8b7ef34cba69_group" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_11" title="CS 2205 Web Programming 1 - Term 1, 2019-2020" href="https://my.uopeople.edu/course/view.php?id=3156">CS 2205 - AY2020-T1</a></p><ul id="random5d8b7ef34cba69_group" role="group" tabindex="-1"><li class="type_container depth_4 contains_branch" aria-labelledby="label_4_12" tabindex="-1"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random5d8b7ef34cba610_group" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_4_12" href="https://my.uopeople.edu/user/index.php?id=3156">Participants</a></p><ul id="random5d8b7ef34cba610_group" role="group" aria-hidden="true" tabindex="-1"><li class="type_user depth_5 item_with_icon" aria-labelledby="label_5_13" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_5_13" href="https://my.uopeople.edu/user/view.php?id=30973&amp;course=3156"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Julien Laurent</span></a></p></li></ul></li><li class="type_setting depth_4 item_with_icon" aria-labelledby="label_4_14" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_4_14" href="https://my.uopeople.edu/badges/view.php?type=2&amp;id=3156"><img class="icon navicon" alt="Badges" title="Badges" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/badge.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Badges</span></a></p></li><li class="type_setting depth_4 item_with_icon" aria-labelledby="label_4_15" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_4_15" href="https://my.uopeople.edu/admin/tool/lp/coursecompetencies.php?courseid=3156"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/competencies.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Competencies</span></a></p></li><li class="type_setting depth_4 item_with_icon" aria-labelledby="label_4_16" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_4_16" href="https://my.uopeople.edu/grade/report/index.php?id=3156"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/grades.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Grades</span></a></p></li><li class="type_structure depth_4 contains_branch" aria-labelledby="label_4_17" tabindex="-1"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_32377" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_32377" data-node-key="32377" data-node-type="30" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_4_17">General</span></p></li><li class="type_structure depth_4 contains_branch" aria-labelledby="label_4_18" tabindex="-1"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_32378" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_32378" data-node-key="32378" data-node-type="30" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_4_18">5 September - 11 September</span></p></li><li class="type_structure depth_4 contains_branch" aria-labelledby="label_4_19" tabindex="-1"><p class="tree_item branch" role="treeitem" id="expandable_branch_30_32379" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_32379" data-node-key="32379" data-node-type="30" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_4_19">12 September - 18 September</span></p></li><li class="type_structure depth_4 contains_branch" aria-labelledby="label_4_20" tabindex="-1"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random5d8b7ef34cba615_group" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_4_20">19 September - 25 September</span></p><ul id="random5d8b7ef34cba615_group" role="group" tabindex="-1"><li class="type_activity depth_5 item_with_icon" aria-labelledby="label_5_21" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_5_21" title="Book" href="https://my.uopeople.edu/mod/book/view.php?id=183247"><img class="icon navicon" alt="Book" title="Book" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/icon_004.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Learning Guide Unit 3</span></a></p></li><li class="type_activity depth_5 item_with_icon" aria-labelledby="label_5_22" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_5_22" title="Forum" href="https://my.uopeople.edu/mod/forum/view.php?id=183248"><img class="icon navicon" alt="Forum" title="Forum" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/icon.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Discussion Forum Unit 3</span></a></p></li><li class="type_activity depth_5 item_with_icon contains_branch current_branch" aria-labelledby="label_5_23" tabindex="-1"><p class="tree_item hasicon branch active_tree_node" role="treeitem" aria-expanded="true" aria-owns="random5d8b7ef34cba618_group" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_5_23" title="Workshop" href="https://my.uopeople.edu/mod/workshop/view.php?id=183249"><img class="icon navicon" alt="Workshop" title="Workshop" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/icon_003.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Programming Assign. Unit 3</span></a></p><ul id="random5d8b7ef34cba618_group" role="group" tabindex="-1"><li class="type_custom depth_6 item_with_icon" aria-labelledby="label_6_24" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_6_24" href="https://my.uopeople.edu/mod/workshop/submission.php?cmid=183249"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">My submission</span></a></p></li></ul></li><li class="type_activity depth_5 item_with_icon" aria-labelledby="label_5_25" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_5_25" title="Assignment" href="https://my.uopeople.edu/mod/assign/view.php?id=183250"><img class="icon navicon" alt="Assignment" title="Assignment" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/icon_002.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Learning Journal Unit 3</span></a></p></li><li class="type_activity depth_5 item_with_icon" aria-labelledby="label_5_26" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_5_26" title="Quiz" href="https://my.uopeople.edu/mod/quiz/view.php?id=183251"><img class="icon navicon" alt="Quiz" title="Quiz" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/icon_005.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Self-Quiz Unit 3</span></a></p></li><li class="type_activity depth_5 item_with_icon" aria-labelledby="label_5_27" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_5_27" title="Quiz" href="https://my.uopeople.edu/mod/quiz/view.php?id=183252"><img class="icon navicon" alt="Quiz" title="Quiz" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/icon_005.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Graded Quiz Unit 3</span></a></p></li></ul></li><li class="type_system depth_4 item_with_icon" aria-labelledby="label_4_28" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_4_28" href="https://my.uopeople.edu/local/kalturamediagallery/index.php?courseid=3156"><img class="icon navicon" alt="" aria-hidden="true" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/media-gallery.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Media Gallery</span></a></p></li></ul></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_29" tabindex="-1"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_770" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_770" data-node-key="770" data-node-type="20" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_29" title="Online Student Writing Center (Optional Resource)" href="https://my.uopeople.edu/course/view.php?id=770">OSWC</a></p></li><li class="type_course depth_3 contains_branch" aria-labelledby="label_3_30" tabindex="-1"><p class="tree_item branch" role="treeitem" id="expandable_branch_20_343" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_343" data-node-key="343" data-node-type="20" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_30" title="Peer Assessment Office (Optional Resource)" href="https://my.uopeople.edu/course/view.php?id=343">PAO</a></p></li></ul></li></ul></li></ul></div></div><span class="skip-block-to" id="sb-1"></span></aside>    
+        <a class="skip" id="return-to-sb-btn" href="#side-panel-button">Exit hidden sidebar block region.</a></div>
+
+<script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://my.uopeople.edu/lib/requirejs.php/1569413208/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://my.uopeople.edu/lib/javascript.php/1569413208/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://my.uopeople.edu/lib/javascript.php/1569413208/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://my.uopeople.edu/lib/javascript.php/1569413208/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://my.uopeople.edu/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+require(["block_navigation/navblock"], function(amd) { amd.init("7711"); });;
+require(["tool_usertours/usertours"], function(amd) { amd.init("8", false, 547668); });;
+require(["block_settings/settingsblock"], function(amd) { amd.init("7712", null); });;
+
+require(['core/yui'], function(Y) {
+    M.util.init_skiplink(Y);
+});
+;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-actionmenu', function() {
+        M.core.actionmenu.init();
+    });
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f5d8b7ef34cba635').submit();
+            });
+        });
+    ;
+require(["mod_workshop/workshopview"], function(amd) { amd.init(); });;
+require(["core/notification"], function(amd) { amd.init(547668, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="Programming%20Assign.%20Unit%203%20(Submission%20phase)_files/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","viewallcourses":"View all courses","cancel":"Cancel","morehelp":"More help","loadinghelp":"Loading...","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_block_hider(Y, {"id":"inst7711","title":"Navigation","preference":"block7711hidden","tooltipVisible":"Hide Navigation block","tooltipHidden":"Show Navigation block"});
+M.util.init_collapsible_region(Y, "workshop-viewlet-instructauthors", false, "Click to expand or collapse");
+M.util.init_collapsible_region(Y, "workshop-viewlet-ownsubmission", false, "Click to expand or collapse");
+ M.util.js_pending('random5d8b7ef34cba639'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5d8b7ef34cba639'); });
+})();
+//]]>
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"65fc3a8026","applicationID":"28434445","transactionName":"ZlMEYBZRXkAFWhILDV8ZM0YNH11cABYRDRBaRQ5bFB9GWgFOSBIKQQ==","queueTime":0,"applicationTime":147,"atts":"ShQTFl5LTR9GWERYGUxL","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+</body><div title="Look Up Dictionary" class="itanywhere-activator" style="left: 1083px; top: 1147.47px; display: block;"></div></html>
